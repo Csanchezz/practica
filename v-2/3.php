@@ -5,7 +5,7 @@
 	function wrote($personaje,$verbo){
 		echo "El $personaje se rie cuando $verbo";
 	}
-	if ($start==true) {
+	if ($start==3.141592) {
 		wrote($personaje,$verbo);
 	}
  ?>

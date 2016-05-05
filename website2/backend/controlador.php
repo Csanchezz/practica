@@ -1,5 +1,4 @@
 <?php 
-	include ('config.php');
 	function imprimir_indice($indice){
 		foreach ($indice as $key ) {
 		$class=$key['head'];

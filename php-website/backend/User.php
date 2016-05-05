@@ -11,6 +11,8 @@ class User
 	private $puesto = '';
 	private $anno_nacimiento = 0;
 	private $empresa = '';
+	private $telefono = 0;
+	public $edad = 0 ;
 	
 	/**
 	 * Crea un nuevo objeto en base a esta clase
@@ -24,7 +26,7 @@ class User
 
 	//metodos
 
-	function __construct($id, $nombre, $apellido, $puesto, $anno_nacimiento, $empresa)
+	function __construct($id, $nombre, $apellido, $puesto, $anno_nacimiento, $empresa, $telefono, $edad)
 	{
 		$this->id = $id;
 		$this->nombre = $nombre;
@@ -32,6 +34,9 @@ class User
 		$this->puesto = $puesto;
 		$this->anno_nacimiento = $anno_nacimiento;
 		$this->empresa = $empresa;
+		$this->telefono = $telefono;
+		$this->edad = $edad;
+
 	}
 
 	/**
@@ -39,9 +44,10 @@ class User
 	 * @param  string $atributo el nombre de uno de los atributos del objeto actual
 	 * @return integer|string           Es integer cuando se pide id o anno_nacimiento, es string para el resto
 	 */
-	public function mostrarDato($atributo)
-	{
+	public function mostrarDato($atributo){
 		return $this->$atributo;
 	}
+
+
 }
 ?>

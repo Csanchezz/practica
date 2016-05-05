@@ -7,7 +7,7 @@ $array_users = array(
 		'puesto' => 'El que hace el café',
 		'anno_nacimiento' => 1993,
 		'empresa' => 'Funsepa',
-		'telefono'=>array(12345678)
+		'telefono'=> array(11111111)
 		),
 	array(
 		'id' => '2',
@@ -16,25 +16,25 @@ $array_users = array(
 		'puesto' => 'El que toma café',
 		'anno_nacimiento' => 1998,
 		'empresa' => 'UMG',
-		'telefono'=>array(12345678)
+		'telefono'=>array(22222222)
 		),
 	array(
 		'id' => '3',
-		'nombre' => 'fulanito',
-		'apellido' => 'mengano',
+		'nombre' => 'Fulano',
+		'apellido' => 'Mengano',
 		'puesto' => 'El que toma te',
 		'anno_nacimiento' => 1980,
 		'empresa' => 'UMG',
-		'telefono'=>array(12345678)
+		'telefono'=>array(33333333)
 		),
 	array(
 		'id' => '4',
 		'nombre' => 'Carlos',
 		'apellido' => 'Sanchez',
 		'puesto' => 'Al que no le gusta el café',
-		'anno_nacimiento' => 1999,
+		'anno_nacimiento' => 1998,
 		'empresa' => 'Colegio',
-		'telefono'=>array(12345678)
+		'telefono'=>array(44444444 , 78391242)
 		),
 	array(
 		'id' => '5',
@@ -43,7 +43,7 @@ $array_users = array(
 		'puesto' => 'El aguador',
 		'anno_nacimiento' => 1995,
 		'empresa' => 'San Carlos',
-		'telefono'=>array(12345678)
+		'telefono'=>array(55555555)
 		)
 	);
 ?>

@@ -67,8 +67,8 @@ include 'backend/User.php';
 						echo '<h1>'.$user->mostrarDato('nombre').' '. $user->mostrarDato('apellido').'</h1><br>';
 						echo "<h4>Empresa: ".$user->mostrarDato('empresa')."<br></h4>";
 						echo "<h4>Puesto: ".$user->mostrarDato('puesto')."<br></h4>";
-						echo "<h4>Edad: ".$user->mostrarDato('edad')." Años</h4><br>";
-						echo "<h4>Telefonos: ".$user->mostrarDato('telefono')."</h4><br>";						
+						echo "<h4>Edad: ".$user->mostrarDato('edad')." Años</h4><br>";			
+						echo "<h4>Telefonos: ".$user->mostrarDato('telefono')."</h4><br>";	
 					}
 
 				 ?>

@@ -26,7 +26,7 @@ class User
 
 	//metodos
 
-	function __construct($id, $nombre, $apellido, $puesto, $anno_nacimiento, $empresa, $telefono, $edad)
+	function __construct($id, $nombre, $apellido, $puesto, $anno_nacimiento, $empresa, $telefono)
 	{
 		$this->id = $id;
 		$this->nombre = $nombre;
@@ -35,7 +35,7 @@ class User
 		$this->anno_nacimiento = $anno_nacimiento;
 		$this->empresa = $empresa;
 		$this->telefono = $telefono;
-		$this->edad = $edad;
+		$this->edad =  $this->Edad();
 
 	}
 
@@ -46,6 +46,11 @@ class User
 	 */
 	public function mostrarDato($atributo){
 		return $this->$atributo;
+	}
+
+	public function Edad(){
+		$edad= date("Y")-$this->anno_nacimiento;
+		return $edad;
 	}
 
 

@@ -32,14 +32,12 @@ function imprimirIndiceUsuarios($array_datos){
  */
 function crearUsuario($array_datos, $id){
 	foreach ($array_datos as $dato) {
-		$annoActual=2016;
-		if($dato['id'] == $id ){
-			$ed=$annoActual-$dato['anno_nacimiento'];		
+		if($dato['id'] == $id ){		
 			$phone="";
 			foreach ($dato['telefono'] as $cel) {
 				$phone=$phone."<br><li>".$cel."</li>";
 			}
-			return new User($dato['id'], $dato['nombre'], $dato['apellido'], $dato['puesto'], $dato['anno_nacimiento'], $dato['empresa'], $phone, $ed);
+			return new User($dato['id'], $dato['nombre'], $dato['apellido'], $dato['puesto'], $dato['anno_nacimiento'], $dato['empresa'], $phone);
 		}
 	}
 }
